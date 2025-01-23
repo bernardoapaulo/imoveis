@@ -8,30 +8,30 @@ This project aims to predict the median price of properties in a region based on
 
 
 # 🛠️ Etapas do Projeto | Project Steps
-## Análise Exploratória de Dados (EDA) | Exploratory Data Analysis (EDA):
+### Análise Exploratória de Dados (EDA) | Exploratory Data Analysis (EDA):
+- Examinamos a distribuição dos preços dos imóveis e outras variáveis importantes.
+- Criamos gráficos, como histogramas e matrizes de correlação, para identificar padrões e relações entre as variáveis.
+- Conclusão principal: Renda média (median_income) mostrou a maior correlação com o preço dos imóveis.
+  
 
-Examinamos a distribuição dos preços dos imóveis e outras variáveis importantes.
-Criamos gráficos, como histogramas e matrizes de correlação, para identificar padrões e relações entre as variáveis.
-Conclusão principal: Renda média (median_income) mostrou a maior correlação com o preço dos imóveis.
-Pré-processamento dos Dados | Data Preprocessing:
+### Pré-processamento dos Dados | Data Preprocessing:
+- Tratamos valores ausentes e outliers em variáveis como quantity e unitprice.
+- Realizamos o one-hot encoding para transformar variáveis categóricas (ocean_proximity) em colunas numéricas.
 
-Tratamos valores ausentes e outliers em variáveis como quantity e unitprice.
-Realizamos o one-hot encoding para transformar variáveis categóricas (ocean_proximity) em colunas numéricas.
-Construção do Modelo | Model Building:
-
-Utilizamos regressão linear para prever o preço médio dos imóveis.
-Dividimos os dados em conjuntos de treino e teste (80/20) para avaliar o desempenho do modelo.
-Avaliação do Modelo | Model Evaluation:
-
-Avaliamos o modelo com métricas como R² e MAE (Erro Absoluto Médio).
-Visualizamos a comparação entre os preços reais e previstos, observando que o modelo funciona bem, mas apresenta desvios para preços muito altos.
+### Construção do Modelo | Model Building:
+- Utilizamos regressão linear para prever o preço médio dos imóveis.
+- Dividimos os dados em conjuntos de treino e teste (80/20) para avaliar o desempenho do modelo.
+- 
+### Avaliação do Modelo | Model Evaluation:
+- Avaliamos o modelo com métricas como R² e MAE (Erro Absoluto Médio).
+- Visualizamos a comparação entre os preços reais e previstos, observando que o modelo funciona bem, mas apresenta desvios para preços muito altos.
 
 ## 📊 Principais Descobertas | Key Findings
-Distribuição de Preços: A maioria dos imóveis está entre $100.000 e $300.000, com valores extremos acima de $500.000.
-Correlação: Renda média é o principal fator relacionado ao preço de um imóvel.
-Desempenho do Modelo: O modelo previu bem a maioria dos preços, mas pode ser aprimorado para lidar com outliers.
+- Distribuição de Preços: A maioria dos imóveis está entre $100.000 e $300.000, com valores extremos acima de $500.000.
+- Correlação: Renda média é o principal fator relacionado ao preço de um imóvel.
+- Desempenho do Modelo: O modelo previu bem a maioria dos preços, mas pode ser aprimorado para lidar com outliers.
 
 ## 📁 Tecnologias Utilizadas | Technologies Used
-Linguagem: Python
-Bibliotecas: pandas, numpy, matplotlib, seaborn, scikit-learn
-Modelagem: Regressão Linear
+- Linguagem: Python
+- Bibliotecas: pandas, numpy, matplotlib, seaborn, scikit-learngit 
+- Modelagem: Regressão Linear
